@@ -1,0 +1,21 @@
+import os
+which_location = "D:\\Team14_IBridge_Jan_2023\\Programs\\"
+fname = input('enter the name of the file to create/append')
+fn = which_location+fname
+f=''
+if not os.path.exists(fn):
+    f = open(fn,'w')
+    print('Fresh File ....created now ')
+else:
+    f = open(fn,'a')
+    print('File exists....opened now in APPEND mode ')
+print ('Please keep inputting the matter/text ')
+print ('type STOP or QUIT to end...')
+while True:
+    txt = input()
+    if txt == 'QUIT' or txt == 'STOP':
+        break
+    else:
+        f.write(txt)
+        f.write('\n')
+f.close()
