@@ -1,0 +1,181 @@
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~ (master)
+$ cd
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~ (master)
+$ pwd
+/c/Users/Nikita shahi
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~ (master)
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~ (master)
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~ (master)
+$ cd onedrive
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive (master)
+$ cd desktop
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop (master)
+$ cd project
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ pwd
+/c/Users/Nikita shahi/onedrive/desktop/project
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git config --global user.name"nikitashahi"
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git config --global user.email"nikitashahi199@gmail.com"
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git init
+Initialized empty Git repository in C:/Users/Nikita shahi/OneDrive/Desktop/project/.git/
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ touch f1.txt
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ notepad f1.txt
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ notepad f1.txt
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git add f1.txt
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1.txt
+
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git commit -m "i am adding new file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Nikita shahi@LAPTOP-GUJL3IT6.(none)')
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1.txt
+
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git commit -m "I am adding my first file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Nikita shahi@LAPTOP-GUJL3IT6.(none)')
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git config --global user.name "Nikita"
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git config --global user.email "nikita199@gmail.com"
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Nikita
+user.email=nikita199@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Nikita shahi@LAPTOP-GUJL3IT6 MINGW64 ~/onedrive/desktop/project (master)
+$ git commit -m 'i am adding my new file"
+> clear
+>
+>
+> git status
+>
